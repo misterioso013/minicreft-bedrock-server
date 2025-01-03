@@ -1,0 +1,17 @@
+[package]
+name = "minecraft_bedrock_server"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "minecraft_bedrock_server"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1.36", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+rand = "0.8"
+zip = "0.6"
+sysinfo = "0.30"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
